@@ -15,13 +15,15 @@ const cardSchema = new mongoose.Schema(
       validate: [isURL, 'Некорректный URL адрес.'],
     },
     owner: {
-      name: String,
-      _id: String,
+      type: mongoose.Schema.Types.ObjectId,
+      ref: 'user',
+      required: true,
     },
     likes: [
       {
-        name: String,
-        _id: String,
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'user',
+        default: [],
       },
     ],
     createdAt: {

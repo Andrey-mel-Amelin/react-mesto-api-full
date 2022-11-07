@@ -33,9 +33,9 @@ export const login = (password, email) => {
 
 export const logout = () => {
   return request({
-    url: 'users/me',
+    url: 'users/signout',
     method: 'DELETE',
-  })
+  });
 }
 
 export const checkToken = () => {

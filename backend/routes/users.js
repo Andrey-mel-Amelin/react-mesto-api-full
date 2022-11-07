@@ -16,7 +16,7 @@ const {
 
 router.get('/', getUsers);
 router.get('/me', getUser);
-router.delete('/me', logout);
+router.delete('/signout', logout);
 router.get('/:userId', validId('userId'), getUser);
 router.post('/', validAuthName, createUser);
 router.patch('/me', validUserInfo, updateUser);
