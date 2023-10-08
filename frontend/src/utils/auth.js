@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://amelin.mesto.backend.nomoredomains.icu/';
+export const BASE_URL = process.env.REACT_APP_BACKEND_URL || 'http://localhost:3002/';
 
 function request({ url, method = 'POST', data }) {
   return fetch(`${BASE_URL}${url}`, {

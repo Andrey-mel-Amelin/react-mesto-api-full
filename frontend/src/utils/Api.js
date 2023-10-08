@@ -104,6 +104,6 @@ class Api {
   }
 }
 
-export const api = new Api('https://amelin.mesto.backend.nomoredomains.icu', {
+export const api = new Api(process.env.REACT_APP_BACKEND_URL || 'http://localhost:3002', {
   'Content-Type': 'application/json',
 });
