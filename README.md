@@ -4,8 +4,6 @@
 * _Регистрации пользователей_
 * _Операции с карточками и пользователями_
 
-## IP amelin_mel@51.250.110.254
-## Frontend https://amelin.mesto.nomoredomains.icu
-## Backend https://amelin.mesto.backend.nomoredomains.icu
+## **[Frontend Deploy](https://mesto-frontend.amelin.site/)**
 
 ### **[Проект Яндекс.Практикум](https://practicum.yandex.ru/)**
